@@ -1,0 +1,17 @@
+#Tomcat 配置
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 9527
+  #打开注释，则通过【http://localhost/aishangxuejie】访问
+  #context-path: /aishangxuejie
+  undertow:
+    accesslog:
+      dir: log
+      enabled: true
+      #pattern: common
+      #rotate: true
+      #suffix: log
+      
